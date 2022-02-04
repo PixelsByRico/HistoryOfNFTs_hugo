@@ -8,6 +8,7 @@ thumbnail: ""
 twitter: "https://twitter.com/PixelMapNFT"
 discord: "https://discord.gg/pixelmap"
 website: "https://pixelmap.io"
+opensea: "https://opensea.io/collection/pixelmap"
 tokenCount: "3970"
 contracts: 
   - name: "Original"
