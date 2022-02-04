@@ -1,0 +1,4 @@
+baseURL = 'https://historyofnfts.io'
+languageCode = 'en-us'
+title = 'History Of NFTs | The #1 resource for Historical NFT Projects'
+theme = "HistoryOfNFTsDash"
