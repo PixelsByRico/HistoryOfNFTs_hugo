@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="end-post-details">
                                             <div class="is-pulled-left">
-                                                <i>{{ .Params.creationDate }} <strong>by</strong> <a>{{ .Params.author }}</a></i>
+                                                <i>{{ .Params.creationDate }} <strong>by</strong> <a href="{{ .Params.creatorUrl }}" target="_blank">{{ .Params.creator }}</a></i>
                                             </div>
                                             <div class="is-pulled-right">
                                                 {{ range .Params.tags }} <a>#{{ . }}</a> {{end}}
