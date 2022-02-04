@@ -8,7 +8,7 @@ creatorUrl: "https://twitter.com/KenErwin88"
 logo: "pixelmap.png"
 creationDate: "November 17th 2016"
 excerpt: "Pixelmap is the 2nd oldest NFT on ETH and this first billboard style NFT from 2016"
-thumbnail: ""
+thumbnail: "pixelmap-thumbnail.png"
 twitter: "https://twitter.com/pixelmapNFT"
 discord: "https://discord.gg/pixelmap"
 website: "https://pixelmap.io"
@@ -20,5 +20,13 @@ tags:
   - ETH
   - onChain
 ---
-# test { .title }
 
+## PixelMap FAQ { .title }
+
+Created in 2016, PixelMap is considered the second-oldest NFT, the first "billboard-style" on Ethereum, and provides the ability to create, display, and immortalize artwork directly on the Blockchain.
+
+  
+### Learn more about PixelMap { .title } 
+
+{{< youtube E_QiclG4s4U >}}
+interview with Andromeda
