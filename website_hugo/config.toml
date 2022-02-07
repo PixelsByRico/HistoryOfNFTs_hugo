@@ -2,3 +2,7 @@ baseURL = 'https://historyofnfts.io'
 languageCode = 'en-us'
 title = 'History Of NFTs | The #1 resource for Historical NFT Projects'
 theme = "HistoryOfNFTsDash"
+
+[params]
+  author = 'Rico Otto'
+  description = "History Of NFTs is the #1 resource for Historical NFT Projects. We are providing the latest updates and information about 'old' ,or the earliest in their niche, NFT projects. From latest sales info to technical analysis."
