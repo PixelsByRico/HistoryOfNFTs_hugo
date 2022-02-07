@@ -1,3 +1,6 @@
+<script>
+  var arr = [];
+</script>
 {{ range where .Site.RegularPages "Type" "page" }}
 <tr>
   <td width="10%"> 
@@ -6,7 +9,7 @@
     {{end}}
   </td>
   <td>
-    <a href="/posts/{{lower .Title}}"><h3>{{.Title}}</h3></a>
+    <a href="/posts/{{lower .Title}}"><h3 class="project-title">{{.Title}}</h3></a>
     <p>{{ .Params.excerpt }}<p>
       <div class="level">
     <div class="socials level-left">
