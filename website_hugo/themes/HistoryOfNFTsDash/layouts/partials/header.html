@@ -47,7 +47,11 @@
   
   .results {
     padding: 0px;
-  }
+    position: absolute;
+    background: white;
+    width: inherit;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+ }
   
   .results ul {margin: 0; padding: 0; }
   .results ul li {
@@ -81,7 +85,18 @@
         <p class="ml-5">History of NFTs</p>
       </a>
 
-
+      <ul>
+        <li>
+          <div class="wrapper">
+            <input type="text" name="search" id="search" placeholder="Search Project" autocomplete="chrome-off">
+            <button><i class="fa fa-search"></i></button>
+            <div class="results">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
       <div class="navbar-burger burger" data-target="navMenu">
         <span></span>
         <span></span>

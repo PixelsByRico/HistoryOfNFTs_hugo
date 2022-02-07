@@ -48,7 +48,7 @@ function renderResults(results) {
 
   const content = results
     .map((item) => {
-      return `<li>${item}</li>`;
+      return `<li><a href="/posts/${item.toLowerCase()}">${item}</a></li>`;
     })
     .join('');
 
