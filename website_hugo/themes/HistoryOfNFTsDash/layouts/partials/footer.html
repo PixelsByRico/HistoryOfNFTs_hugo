@@ -15,3 +15,15 @@
     </svg></a>
   </div>
 </footer>
+
+<script>
+  var arr = [];
+  var elements = document.getElementsByClassName('project-title');
+
+  for (let i = 0; i < elements.length; i++) {
+    arr.push(elements[i].innerHTML);
+  }
+
+  document.getElementById('projectCount').innerHTML = elements.length;
+  console.log(arr);
+</script>
