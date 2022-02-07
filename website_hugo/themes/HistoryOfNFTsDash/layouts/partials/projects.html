@@ -9,7 +9,8 @@
     {{end}}
   </td>
   <td>
-    <a href="/{{lower .Title}}"><h3 class="project-title">{{.Title}}</h3></a>
+    <a href="/{{lower .Title}}"><h3 class="project-title">{{.Title}} {{ if eq .Params.isVerified true }} <img src="/img/check-decagram.svg" alt=""> {{ end }}</i>
+    </span></h3></a>
     <p>{{ .Params.excerpt }}<p>
       <div class="level">
     <div class="socials level-left">

@@ -14,6 +14,7 @@ discord: "https://discord.gg/pixelmap"
 website: "https://pixelmap.io"
 opensea: "https://opensea.io/collection/pixelmap"
 tokenCount: "3970"
+isVerified: true
 currentFloor: 1.84
 contracts: 
   - name: "Original"
