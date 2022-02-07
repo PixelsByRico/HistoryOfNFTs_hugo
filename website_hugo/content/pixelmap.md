@@ -12,6 +12,7 @@ thumbnail: "pixelmap-thumbnail.png"
 twitter: "https://twitter.com/pixelmapNFT"
 discord: "https://discord.gg/pixelmap"
 website: "https://pixelmap.io"
+opensea: "https://opensea.io/collection/pixelmap"
 tokenCount: "3970"
 currentFloor: 1.84
 contracts: 
