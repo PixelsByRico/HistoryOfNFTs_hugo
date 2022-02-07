@@ -1,90 +1,99 @@
 {{ define "main" }}
 <div class="container">
-    <div class="columns">
-      <div class="column is-3 ">
-        <aside class="menu is-hidden-mobile">
-          <p class="menu-label">
-            General
-          </p>
-          <ul class="menu-list">
-            <li><a class="is-active" style="background-color: #a5774c;">Dashboard</a></li>
-          </ul>
-          
-        </aside>
-      </div>
-      <div class="column is-9">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-          <ul>
-            <li class="is-active"><a href="../" aria-current="page">...</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
-          </ul>
-        </nav>
-        <section class="hero is-info welcome is-small">
-          <div class="hero-body" style="background: #a5774c;">
-            <div class="container">
-              <h1 class="title">
-                Welcome to the NFT history library.
-              </h1>
-              <h2 class="subtitle">
-                I hope you are having a great day!
-              </h2>
-            </div>
+  <div class="columns">
+    <div class="column is-3 ">
+      <aside class="menu is-hidden-mobile">
+        <p class="menu-label">
+          General
+        </p>
+        <ul class="menu-list">
+          <li><a class="is-active" style="background-color: #a5774c;">Dashboard</a></li>
+        </ul>
+
+      </aside>
+    </div>
+    <div class="column is-9">
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li class="is-active"><a href="../" aria-current="page">...</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Dashboard</a></li>
+        </ul>
+      </nav>
+      <section class="hero is-info welcome is-small">
+        <div class="hero-body" style="background: #a5774c;">
+          <div class="container">
+            <h1 class="title">
+              Welcome to the NFT history library.
+            </h1>
+            <h2 class="subtitle">
+              I hope you are having a great day!
+            </h2>
           </div>
-        </section>
-        <section class="info-tiles">
-          <div class="tile is-ancestor has-text-centered">
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title" id="projectCount">....</p>
-                <p class="subtitle">Projects</p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title" id="author-count">...</p>
-                <p class="subtitle">Authors
-                </p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">...</p>
-                <p class="subtitle">Visits</p>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child box">
-                <p class="title">...</p>
-                <p class="subtitle">Contributors</p>
-              </article>
-            </div>
+        </div>
+      </section>
+      <section class="info-tiles">
+        <div class="tile is-ancestor has-text-centered">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title" id="projectCount">....</p>
+              <p class="subtitle">Projects</p>
+            </article>
           </div>
-        </section>  
-        <div class="columns">
-          <div class="column is-12">
-            <div class="card events-card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  Top Projects
-                </p>
-              </header>
-              <div class="card-table">
-                <div class="content">
-                  <table class="table is-fullwidth is-striped">
-                    <tbody>
-                        {{ partial "projects.html" . }}
-                    </tbody>
-                  </table>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title" id="author-count">...</p>
+              <p class="subtitle">Authors
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">...</p>
+              <p class="subtitle">Visits</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">...</p>
+              <p class="subtitle">Contributors</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="columns">
+        <div class="column is-12">
+          <div class="card events-card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Top Projects
+              </p>
+
+              <div class="wrapper">
+                <input type="text" name="search" id="search" placeholder="Type to search" autocomplete="chrome-off">
+                <button><i class="fa fa-search"></i></button>
+                <div class="results">
+                  <ul>
+                  </ul>
                 </div>
               </div>
-              <!-- <footer class="card-footer">
+            </header>
+            <div class="card-table">
+              <div class="content">
+                <table class="table is-fullwidth is-striped">
+                  <tbody>
+                    {{ partial "projects.html" . }}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- <footer class="card-footer">
                 <a href="#" class="card-footer-item">View All</a>
               </footer> -->
-            </div>
           </div>
-          
         </div>
+
       </div>
     </div>
   </div>
+</div>
 {{ end }}
