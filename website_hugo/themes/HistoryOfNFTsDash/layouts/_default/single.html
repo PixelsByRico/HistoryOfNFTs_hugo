@@ -20,7 +20,7 @@
                                 <div class="card-content">
                                     <div class="has-text-centered">
                                         <div class="post-header">
-                                            <img src="/img/{{ .Params.thumbnail }}">
+                                            {{ if .Params.thumbnail }} <img src="/img/{{ .Params.thumbnail }}"> {{end}}
                                             <h4 class="title is-4 is-spaced">{{ .Title }}</h4>
                                             <h5 class="subtitle is-5"><i>{{ .Params.excerpt }}</i></h5>
                                             <hr />
@@ -29,7 +29,7 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <figure class="image is-48x48">
-                                                <img src="/img/{{ .Params.logo }}" alt="Image">
+                                               {{ if .Params.logo }} <img src="/img/{{ .Params.logo }}" alt="Image"> {{end}}
                                             </figure>
                                         </div>
                                         <div class="media-content">
@@ -55,6 +55,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{ if .Params.currentFloor }}
                         <div class="card-wrapper">
                             <div class="card">
                                 <div class="card-content">
@@ -63,6 +64,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{end}}
                         <!-- end of plugins/etc/ column -->
 
                     </div>
@@ -76,19 +78,23 @@
                             <hr />
                             <div class="author-content">
                                 <article class="media">
+                                    {{ if .Params.creatorImg }}
                                     <div class="media-left">
                                         <figure class="image is-64x64">
                                             <img src="/img/{{ .Params.creatorImg }}" alt="Image">
                                         </figure>
                                     </div>
+                                    {{end}}
                                     <div class="media-content">
+                                        {{ if .Params.creatorDesc }}
                                         <div class="content">
                                             <strong>Creation</strong>
-                                            <p>{{ .Params.creatorDesc }}</p>
+                                            <p>{{ .Params.creatorDesc }}</p> 
                                         </div>
+                                        {{end}}
                                         <div class="end-post-details">
                                             <div class="is-pulled-left">
-                                                <i>{{ .Params.creationDate }} <strong>by</strong> <a href="{{ .Params.creatorUrl }}" target="_blank">{{ .Params.creator }}</a></i>
+                                               {{ if .Params.creationDate}} <i>{{ .Params.creationDate }} {{end}} {{ if .Params.creatorUrl }} <strong>by</strong> <a href="{{ .Params.creatorUrl }}" target="_blank">{{ .Params.creator }}</a> {{end}} </i>
                                             </div>
                                             <div class="is-pulled-right">
                                                 {{ range .Params.tags }} <a>#{{ . }}</a> {{end}}
