@@ -9,9 +9,10 @@
     {{end}}
   </td>
   <td>
-    <a href="/{{lower .Title}}"><h3 class="project-title">{{.Title}} {{ if eq .Params.isVerified true }} <img src="/img/check-decagram.svg" alt=""> {{ end }}</i>
+    <a href="/{{lower .Title}}"><h3 class="project-title mb-0">{{.Title}} {{ if eq .Params.isVerified true }} <img src="/img/check-decagram.svg" alt=""> {{ end }}</i>
     </span></h3></a>
-    <p>{{ .Params.excerpt }}<p>
+    <a href="https://etherscan.io/address/{{ .Params.orgContractAddress }}" class="contractAddress">{{ .Params.orgContractAddress }}</a>
+    <p class="mt-3">{{ .Params.excerpt }}<p>
       <div class="level">
     <div class="socials level-left">
       {{ if .Params.twitter }}
