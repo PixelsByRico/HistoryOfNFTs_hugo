@@ -115,11 +115,11 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            {{ if .Params.chain }} <td>{{ .Params.chain }}</td> {{end}}
-                                            {{ if .Params.standard }} <td>{{ .Params.standard }}</td> {{end}}
-                                            {{ if .Params.contract }} <td>{{ .Params.contract }}</td> {{end}}
-                                            {{ if .Params.contractDate }} <td>{{ .Params.contractDate }}</td> {{end}}
-                                            {{ if .Params.mintDate }} <td>{{ .Params.mintDate }}</td> {{end}}
+                                            <td>   {{ if .Params.chain }} {{ .Params.chain }}</td> {{end}}
+                                            <td>  {{ if .Params.standard }} {{ .Params.standard }}</td> {{end}}
+                                            <td>  {{ if .Params.contract }}{{ .Params.contract }}</td> {{end}}
+                                            <td>{{ if .Params.contractDate }} {{ .Params.contractDate }}</td> {{end}}
+                                            <td> {{ if .Params.mintDate }} {{ .Params.mintDate }}</td> {{end}}
                                         </tr>
                                     </tbody>
                                 </table>
