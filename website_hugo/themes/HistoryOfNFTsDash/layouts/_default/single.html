@@ -91,6 +91,14 @@
                         <div class="box">
 
                             <div class="content-wrapper">
+                                <style>
+                                    .title:not(:last-child){
+                                        margin-bottom: 0;
+                                    }
+                                    .content-wrapper > p {
+                                        margin-bottom: 2em;
+                                    }
+                                </style>
                                 {{ .Content }}
                             </div>
                             <h3 class="title mt-5">Specifications</h3> 
